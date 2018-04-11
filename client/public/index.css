@@ -1,0 +1,45 @@
+body, html{
+    margin: 0;
+    background-color: #303030;
+    height: 100%;
+}
+/*MAIN PAGE*/
+.greeting{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100px;
+    color: #f9f9f9;
+}
+.topBar{
+    position: fixed;
+    width: 100%;
+    text-align: right;
+}
+.topBtn{
+    display: inline-block;
+    border: solid 1px #5cb85c;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: #5cb85c;
+    padding: 0 5px;
+    margin-top: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+    outline: none;
+}
+.signupBtn{
+    background-color: #5cb85c;
+    color: #303030;
+}
+.topBtn:hover{
+    background-color: #5cb85c;
+    color: #f9f9f9;
+    cursor: pointer;
+}
+.signupBtn:hover{
+    color: #f9f9f9;
+}
+

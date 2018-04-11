@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>www.dakotalarson.com</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="auth.css" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="auth.js" async defer></script>
+</head>
+<body>
+<div class="authFormParent">
+    <form action="" method="post" class="authForm signupForm" style="display: none">
+        <div class="authFormTitle">Sign Up</div>
+        <input name="username" type="text" placeholder="Username" autocomplete="username" class="signupFormUser"/><br/>
+        <input name="email" type="text" placeholder="Email Address" autocomplete="email" class="signupFormEmail"/><br/>
+        <input name="password" type="password" placeholder="Password" autocomplete="new-password" class="signupFormPass"/><br/>
+        <input name="passwordConf" type="password" placeholder="Confirm Password" autocomplete="new-password" class="signupFormPassConf"/><br/>
+        <div class="g-recaptcha recaptcha" data-theme="dark" data-size="normal" data-callback="recapSuccess" data-expired-callback="recapExpired" data-sitekey="6LfZQEYUAAAAAKujgLg9UyEEUHqOokKyX3fBV5bA"></div><br/>
+        <span class="authErr signupErr"></span><br/>
+        <button type="submit">Sign Up</button>
+        <a href="/" class="authFormCancel">Cancel</a>
+        <div class="formSplitter"><div></div><span>OR</span><div></div></div>
+        <span class="authFormDisplaySignin">Sign In</span>
+    </form>
+    <form action="" method="post" class="authForm signinForm" style="display: none">
+        <div class="authFormTitle">Sign In</div>
+        <input name="email" type="text" placeholder="Email Address" autocomplete="email" class="signinFormEmail"/><br/>
+        <input name="password" type="password" placeholder="Password" autocomplete="current-password" class="signinFormPass"/><br/>
+        <a href="" class="authForgotPassLink">Forgot Password?</a><br/>
+        <span class="authErr signinErr"></span><br/>
+        <button type="submit">Sign In</button>
+        <a href="/" class="authFormCancel">Cancel</a>
+        <div class="formSplitter"><div></div><span>OR</span><div></div></div>
+        <span class="authFormDisplaySignup">Sign Up</span>
+    </form>
+    <form action="" method="post" class="authForm verifyForm" style="display: none">
+        <div class="authFormTitle">Verification</div>
+        <input name="email" type="text" placeholder="Email Address" autocomplete="email" class="verifyFormEmail"/><br/>
+        <input name="verification" type="number" placeholder="Verification Code" autocomplete="off" class="verifyFormNumber"/><br/>
+        <a href="" class="authResendEmail">Resend Email?</a><br/>
+        <span class="authErr verifyErr"></span><br/>
+        <button type="submit">Verify</button>
+        <a href="/" class="authFormCancel">Cancel</a>
+        <div class="formSplitter"><div></div><span>OR</span><div></div></div>
+        <span class="authFormDisplaySignin">Sign In</span>
+    </form>
+</div>
+</body>
+</html>
+<!--<div class="topBar">-->
+<!--<a href="/auth#signin" class="topBtn signinBtn">Sign In</a>-->
+<!--<a href="/auth#signup" class="topBtn signupBtn">Sign Up</a>-->
+<!--</div>-->

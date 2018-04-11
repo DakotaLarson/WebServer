@@ -1,0 +1,45 @@
+body, html{
+    background-color: #040C0E;
+    height: 100%;
+    text-align: center;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+img{
+    height: 384px;
+    width: 384px;
+}
+.textCont{
+    text-align: left;
+    padding-left: 64px;
+}
+.subContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-top: 35px;
+    width: 1400px;
+    height: 560px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*background-color: black;*/
+}
+.title, .subtitle{
+    display: inline-block;
+    color: white;
+    padding-top: 25px;
+    font-family: sans-serif;
+    font-size: 64px;
+}
+.subtitle{
+    font-size: 36px;
+    padding-top: 45px;
+}

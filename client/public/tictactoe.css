@@ -1,0 +1,38 @@
+html{
+    background: linear-gradient(#085e59, #0a465c);
+    font-family: 'Nova Mono', monospace;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    height: 100%;
+    user-select: none;
+}
+h1{
+    margin: 5vmin 0;
+    font-size: 15vmin;
+}
+input[type="text"]{
+    background: rgba(255, 255, 255, 0.125);
+    border: none;
+    outline: none;
+    font: 5vmin 'Nova Mono', monospace;
+    color: white;
+    margin-bottom: 5vmin;
+    padding: 1vmin;
+}
+.option-parent{
+    display: flex;
+    justify-content: space-evenly;
+}
+.option{
+    font-size: 10vmin;
+    border: solid 1px;
+    padding: 10vmin 0;
+    width: 50vmin;
+    display: inline-block;
+    transition: background-color ease 0.25s;
+}
+.option:hover{
+    background-color: rgba(255, 255, 255, 0.125);
+    cursor: pointer;
+}
